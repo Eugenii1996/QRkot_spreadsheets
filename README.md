@@ -66,28 +66,10 @@ pip install -r requirements.txt
 
 Из корневой деректории проекта cat_charity_fund выполнить команды:
 
-* Для инициализации Alembic в проекте:
-
-    ```bash
-    alembic init --template async alembic
-    ```
-
-* Для автоматического создания миграций:
-
-    ```bash
-    alembic revision --autogenerate -m "Example migration name"
-    ```
-
 * Для применения последней миграции:
 
     ```bash
     alembic upgrade head
-    ```
-
-* Для отмены последней миграций:
-
-    ```bash
-    alembic downgrade -1
     ```
 
 * Для запуска сервера:

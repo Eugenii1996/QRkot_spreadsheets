@@ -1,3 +1,4 @@
+from typing import List
 from fastapi import HTTPException
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -63,4 +64,16 @@ async def check_fully_invested(
         raise HTTPException(
             status_code=400,
             detail='Закрытый проект нельзя редактировать!',
+        )
+
+
+async def check_table_values_size(
+        table_values: List,
+        row_count: int,
+        column_count: int
+) -> None:
+    if len(table_values) > row_count or len(max(table_values)) > column_count:
+        raise HTTPException(
+            status_code=400,
+            detail='Размер добавляемых данных превышает размер таблицы!',
         )
