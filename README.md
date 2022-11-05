@@ -27,11 +27,11 @@
 ### Клонирование репозитория и переход в него в командной строке:
 
 ```bash
-git clone git@github.com:Eugenii1996/cat_charity_fund.git
+git clone git@github.com:Eugenii1996/QRkot_spreadsheets.git
 ```
 
 ```bash
-cd cat_charity_fund
+cd QRkot_spreadsheets
 ```
 
 ### Cоздать и активировать виртуальное окружение:
