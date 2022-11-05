@@ -34,7 +34,9 @@ git clone git@github.com:Eugenii1996/cat_charity_fund.git
 cd cat_charity_fund
 ```
 
-Cоздать и активировать виртуальное окружение:
+### Cоздать и активировать виртуальное окружение:
+
+Виртуальное окружение должно использовать Python 3.7
 
 ```bash
 pyhton -m venv venv
